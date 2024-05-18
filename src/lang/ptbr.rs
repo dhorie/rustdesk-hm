@@ -3,7 +3,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
     [
         ("Status", "Status"),
         ("Your Desktop", "HM Informática"),
-        ("desk_tip", "Uso exclusivo para clientes da HM"),
+        ("desk_tip", "Uso exclusivo para nossos clientes"),
         ("Password", "Senha"),
         ("Ready", "Pronto"),
         ("Established", "Estabelecido"),
@@ -394,7 +394,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Accept sessions via click", "Aceitar sessões via clique"),
         ("Accept sessions via both", "Aceitar sessões de ambos os modos"),
         ("Please wait for the remote side to accept your session request...", "Por favor aguarde enquanto o cliente remoto aceita seu pedido de sessão..."),
-        ("One-time Password", "Senha de uso único"),
+        ("One-time Password", "Senha"),
         ("Use one-time password", "Usar senha de uso único"),
         ("One-time password length", "Comprimento da senha de uso único"),
         ("Request access to your device", "Solicitar acesso ao seu dispositivo"),
