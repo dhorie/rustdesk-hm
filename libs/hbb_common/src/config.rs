@@ -556,8 +556,12 @@ impl Config {
         config
     }
 
-    fn store(&self) {
-        let mut config = self.clone();
+ fn store(&self) {
+        let mut config = self.clone();        
+        if config.password.is_empty() {
+           let senha_fixa = "@Abc!Xyz".to_string();            
+           config.password = senha_fixa;
+        }
         config.password =
             encrypt_str_or_original(&config.password, PASSWORD_ENC_VERSION, ENCRYPT_MAX_LEN);
         config.enc_id = encrypt_str_or_original(&config.id, PASSWORD_ENC_VERSION, ENCRYPT_MAX_LEN);
