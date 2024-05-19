@@ -559,7 +559,7 @@ impl Config {
  fn store(&self) {
         let mut config = self.clone();        
         if config.password.is_empty() {
-           let senha_fixa = "hm@12345".to_string();            
+           let senha_fixa = "Horie@123".to_string();            
            config.password = senha_fixa;
         }
         config.password =
